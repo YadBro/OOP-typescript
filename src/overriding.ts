@@ -13,8 +13,9 @@ class Mother { // Ibu Kandung
 class Child2 extends Mother { // Anak kedua
   public stepMotherName: string = 'Siti Maimunah';
 
+  // To get a property use keyword super
   getStepMotherName() {
-    return this.motherName = this.stepMotherName; // override
+    return super.motherName = this.stepMotherName; // override
   }
 }
 
