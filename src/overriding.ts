@@ -26,4 +26,4 @@ class Child2 extends Mother { // Anak kedua
 
 const maman = new Child2();
 console.log(maman.getStepMotherName()); // The result: Siti Maimunah
-console.log(maman.getMotherName()); // The result: Yunani Watasio
+console.log(maman.getMotherName()); // The result: undefined (karena propertynya belum di defined ke constructor)
