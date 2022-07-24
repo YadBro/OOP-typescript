@@ -17,7 +17,13 @@ class Child2 extends Mother { // Anak kedua
   getStepMotherName() {
     return super.motherName = this.stepMotherName; // override
   }
+
+  // And then how to get a motherName this child, same example on above
+  getMotherName() {
+    return super.motherName;
+  }
 }
 
 const maman = new Child2();
 console.log(maman.getStepMotherName()); // The result: Siti Maimunah
+console.log(maman.getMotherName()); // The result: Yunani Watasio
