@@ -4,6 +4,7 @@ Apa itu Constructor? Constructor adalah method khusus yang akan dieksekusi pada 
 www.petanikode.com/java-oop-constructor/
 
 lebih simplenya untuk menginisialisasikan object itu sendiri.
+lebih simplenya lagi constructor itu adalah sebuah method yang nantinya akan pertama kali di panggil ketika class object itu pertama kali di buat
 */
 
 class Fruits {
@@ -41,3 +42,13 @@ console.log(pepaya1);
 console.log(pepaya1.getVitamin());
 console.log(pepaya2);
 console.log(pepaya2.getVitamin());
+
+
+class Animal {
+  constructor() {
+    console.log('Constructor is always call first!');
+  }
+}
+
+
+const bear = new Animal();
