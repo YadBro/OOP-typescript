@@ -52,3 +52,28 @@ class Animal {
 
 
 const bear = new Animal();
+
+
+class Animal2 {
+  public name: string;
+  public foot: number;
+
+  public constructor(name: string, foot: number) {
+    this.name = name;
+    this.foot = foot;
+  }
+}
+
+const fish = new Animal2('Koi', 5);
+console.log(fish);
+
+
+// =============
+// Make a simple constructor
+
+class Animal3 {
+  public constructor(public name: string, public foot: number){}
+}
+
+const lion = new Animal3('Simba', 4);
+console.log(lion);
