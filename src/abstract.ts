@@ -27,3 +27,29 @@ class Anak extends Induk {
 let suparto = new Anak();
 console.log(suparto.getData());
 console.log(suparto.getData2());
+
+
+abstract class Hewan {
+  public name: string;
+  
+  public constructor(name: string) {
+    this.name = name;
+  }
+
+  public abstract walk(): void;
+}
+
+class Lion extends Hewan {
+
+  public constructor(public name: string = 'Udin') {
+    super(name);
+  }
+
+  public walk(): void {
+    console.log('The lion walked with it\'s foot');
+  }
+}
+
+const myLion = new Lion();
+console.log('My name lion is = ' + myLion.name);
+myLion.walk()
