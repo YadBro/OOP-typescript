@@ -52,4 +52,4 @@ class Lion extends Hewan {
 
 const myLion = new Lion();
 console.log('My name lion is = ' + myLion.name);
-myLion.walk()
+myLion.walk();
