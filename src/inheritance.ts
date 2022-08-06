@@ -47,14 +47,17 @@ class Samsung implements AndroidPhone {
   public constructor(name: string) {
     this.name = name;
   }
-  menu(): void {
-    throw new Error("Method not implemented.");
+
+  public menu(): void {
+    console.log('Menu Tapped.');
   }
-  home(): void {
-    throw new Error("Method not implemented.");
+  
+  public home(): void {
+    console.log('Home Tapped.');
   }
-  back(): void {
-    throw new Error("Method not implemented.");
+  
+  public back(): void {
+    console.log('Back Tapped.');
   }
 
 }
