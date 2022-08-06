@@ -33,3 +33,28 @@ console.log(udin.getFatherName()); // The result: Siti Jubaedah
 
 // CATATAN
 // Dalam inheritance seorang child hanya bisa mengextends 1 parent saja tidak boleh lebih`
+
+interface AndroidPhone {
+  name: string;
+  menu(): void;
+  home(): void;
+  back(): void;
+}
+
+class Samsung implements AndroidPhone {
+  public name: string;
+
+  public constructor(name: string) {
+    this.name = name;
+  }
+  menu(): void {
+    throw new Error("Method not implemented.");
+  }
+  home(): void {
+    throw new Error("Method not implemented.");
+  }
+  back(): void {
+    throw new Error("Method not implemented.");
+  }
+
+}
