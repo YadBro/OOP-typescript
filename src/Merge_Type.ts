@@ -6,7 +6,8 @@ type Tes2 = {
   age: number,
 }
 
-type Manusia = Tes1 & Tes2;
+type Manusia = Tes1 & Tes2; // merge
+type Manusia2 = Tes1 | Tes2; // union
 
 const yadi: Manusia = {
   name: 'Yadi Apriyadi',
@@ -14,3 +15,9 @@ const yadi: Manusia = {
 }
 
 console.log(yadi);
+
+const udinTerpesona: Manusia2 = {
+  name: 'Udin Terpesona',
+}
+
+console.log(udinTerpesona);
