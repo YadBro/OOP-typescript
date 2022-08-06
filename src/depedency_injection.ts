@@ -58,9 +58,12 @@ class FoodProduct {
 const tokoLama = new TokoLama();
 const tokoBaru = new TokoBaru();
 
-const hijabBagus = new HijabProduct(tokoBaru, 'Bagus', 25000);
+const hijabBagus = new HijabProduct(tokoBaru, 'HijabBagus', 25000);
+const hijabBagus2 = new HijabProduct(tokoBaru, 'HijabBagus2', 22000);
 const makanBagus = new FoodProduct(tokoLama, 'SEAFOOD', 25000);
 console.log(hijabBagus);
+console.log(hijabBagus2);
 console.log(makanBagus);
 hijabBagus.sell();
+hijabBagus2.sell();
 makanBagus.sell();
